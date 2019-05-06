@@ -1,0 +1,7 @@
+C:\Users\wy3h\source\repos\Newconsole\Newconsole\obj\Debug\Newconsole.csprojAssemblyReference.cache
+C:\Users\wy3h\source\repos\Newconsole\Newconsole\obj\Debug\Newconsole.csproj.CoreCompileInputs.cache
+C:\Users\wy3h\source\repos\Newconsole\Newconsole\bin\Debug\Newconsole.exe.config
+C:\Users\wy3h\source\repos\Newconsole\Newconsole\bin\Debug\Newconsole.exe
+C:\Users\wy3h\source\repos\Newconsole\Newconsole\bin\Debug\Newconsole.pdb
+C:\Users\wy3h\source\repos\Newconsole\Newconsole\obj\Debug\Newconsole.exe
+C:\Users\wy3h\source\repos\Newconsole\Newconsole\obj\Debug\Newconsole.pdb

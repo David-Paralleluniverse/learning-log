@@ -1,0 +1,10 @@
+C:\Users\wy3h\source\repos\Circleapp\Circleapp\bin\Debug\Circleapp.exe.config
+C:\Users\wy3h\source\repos\Circleapp\Circleapp\bin\Debug\Circleapp.exe
+C:\Users\wy3h\source\repos\Circleapp\Circleapp\bin\Debug\Circleapp.pdb
+C:\Users\wy3h\source\repos\Circleapp\Circleapp\obj\Debug\Circleapp.csprojAssemblyReference.cache
+C:\Users\wy3h\source\repos\Circleapp\Circleapp\obj\Debug\Circleapp.Form1.resources
+C:\Users\wy3h\source\repos\Circleapp\Circleapp\obj\Debug\Circleapp.Properties.Resources.resources
+C:\Users\wy3h\source\repos\Circleapp\Circleapp\obj\Debug\Circleapp.csproj.GenerateResource.cache
+C:\Users\wy3h\source\repos\Circleapp\Circleapp\obj\Debug\Circleapp.csproj.CoreCompileInputs.cache
+C:\Users\wy3h\source\repos\Circleapp\Circleapp\obj\Debug\Circleapp.exe
+C:\Users\wy3h\source\repos\Circleapp\Circleapp\obj\Debug\Circleapp.pdb
