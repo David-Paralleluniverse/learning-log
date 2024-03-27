@@ -12,6 +12,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.UUID;
 
 
@@ -64,7 +65,11 @@ public class GoodsController {
 
 	//Security测试类
 	@GetMapping("hello")
-	public String HelloSec(){
-		return "Hello";
+	public String HelloSec(@RequestParam("username") String uname,@RequestParam("password") String upass){
+		if(Objects.isNull(goodsMapper1.SelUserName(upass,uname))){
+			return "没有";
+		}else {
+			return "有";
+		}
 	}
 }
