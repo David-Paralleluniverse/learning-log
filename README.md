@@ -1,2 +1,8 @@
-# My-C-learning-history
-This is my C# learning history(codes and applications)
+# 我个人的学习笔记
+
+## 其中包含：
+
+```
+1.早期C#相关
+2.正在学习SpringSecurity
+```
