@@ -4,13 +4,10 @@ import com.example.better.BetterApplication;
 import com.example.better.entity.Goods;
 import com.example.better.mapper.GoodsMapper;
 import com.example.better.service.SearchSevice;
+import com.example.better.utils.JwtUtil;
 import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
@@ -72,4 +69,13 @@ public class GoodsController {
 			return "有";
 		}
 	}
+
+
+	@GetMapping("jwt")
+	public String Rtl(@RequestParam("token") String name){
+		return (String) JwtUtil.parsePayload(name).get("userid");
+	}
+
+
+
 }

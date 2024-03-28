@@ -1,4 +1,4 @@
-package com.example.better.utils;
+package  com.example.better.utils;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.JwsHeader;
@@ -17,11 +17,11 @@ import java.util.UUID;
  * @date 2023/10/23 16:38
  * @description
  */
-public class JwtUtils {
+public class JwtUtil {
     /**
      * 过期时间(单位:秒)
      */
-    public static final int ACCESS_EXPIRE = 60;
+    public static final int ACCESS_EXPIRE = 360000;
     /**
      * 加密算法
      */
@@ -31,7 +31,7 @@ public class JwtUtils {
      * 一旦客户端得知这个secret, 那就意味着客户端是可以自我签发jwt了。
      * 应该大于等于 256位(长度32及以上的字符串)，并且是随机的字符串
      */
-    private final static String SECRET = "secretKey";
+    private final static String SECRET = "mhp-secretKey-for-webapplications";
     /**
      * 秘钥实例
      */
@@ -55,7 +55,7 @@ public class JwtUtils {
     iat: jwt的签发时间
     jti: jwt的唯一身份标识，主要用来作为一次性token,从而回避重放攻击
      */
-    public static String genAccessToken(String username) {
+    public static String genAccessToken(String userid) {
         // 令牌id
         String uuid = UUID.randomUUID().toString();
         Date exprireDate = Date.from(Instant.now().plusSeconds(ACCESS_EXPIRE));
@@ -67,7 +67,7 @@ public class JwtUtils {
                 .add("alg", "HS256")
                 .and()
                 // 设置自定义负载信息payload
-                .claim("username", username)
+                .claim("userid", userid)
                 // 令牌ID
                 .id(uuid)
                 // 过期日期
@@ -103,5 +103,3 @@ public class JwtUtils {
     }
 
 }
-
-
