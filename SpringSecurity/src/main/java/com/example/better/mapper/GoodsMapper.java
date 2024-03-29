@@ -29,6 +29,11 @@ public interface GoodsMapper {
 	@Select("SELECT uid,username,password,tel,major,uskey FROM u_user WHERE username=#{username}")
 	User SelUser(String username);
 
+	//用id查用户名
+	@Select("SELECT uid,username,password,tel,major,uskey FROM u_user WHERE uid=#{id}")
+	User SelUserById(Integer id);
+
+
 	@Select("SELECT username FROM u_user WHERE  username=#{username}")
 	User SelUser1(String username);
 

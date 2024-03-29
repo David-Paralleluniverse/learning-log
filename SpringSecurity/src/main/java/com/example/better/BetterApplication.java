@@ -25,12 +25,12 @@ public class BetterApplication {
 		123456密码：$2a$10$hnZ2s75LhaP8zad3FCS.B.sFIULq689ji2YoWdsdxcdE4IHBy9QJe
 
 		*/
-		/*
+
 		//System.out.println(JwtUtil.genAccessToken("Wongy"));
-		System.out.println(JwtUtil.parsePayload("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyaWQiOiIxNiIsImp0aSI6IjFkOTAwZDQ3LWNjOGUtNDU0NS1hNjQzLWYyZTU2NjkzZTE0ZiIsImV4cCI6MTcxMjA0MzYwNiwiaWF0IjoxNzExNjgzNjA2LCJzdWIiOiJQZXJpcGhlcmFscyIsImlzcyI6IlRpYW0ifQ.iyXi3pi1Ui5SiPb72Hgo4es6iBeX5E9C8zPf1Sx5ZQ4").get("userid"));
+		System.out.println(JwtUtil.parsePayload("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyaWQiOiIxNiIsImp0aSI6IjFkOTAwZDQ3LWNjOGUtNDU0NS1hNjQzLWYyZTU2NjkzZTE0ZiIsImV4cCI6MTcxMjA0MzYwNiwiaWF0IjoxNzExNjgzNjA2LCJzdWIiOiJQZXJpcGhlcmFscyIsImlzcyI6IlRpYW0ifQ.iyXi3pi1Ui5SiPb72Hgo4es6iBeX5E9C8zPf1Sx5ZQ4"));
 		//这里解决了Jwt的问题，生成了工具类并正常解析
 
-		 */
+
 
 
 

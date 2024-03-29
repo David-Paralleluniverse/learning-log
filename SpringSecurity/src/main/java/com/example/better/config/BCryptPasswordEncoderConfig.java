@@ -1,5 +1,7 @@
 package com.example.better.config;
 
+import com.example.better.filter.JwtAuthenticationTokenFilter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -11,6 +13,7 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
@@ -20,6 +23,9 @@ import java.util.Collections;
 @Configuration
 @EnableWebSecurity
 public class BCryptPasswordEncoderConfig {
+
+    @Autowired
+    JwtAuthenticationTokenFilter jwtAuthenticationTokenFilter;
 
     @Bean
     public PasswordEncoder passwordEncoder() {
@@ -43,6 +49,7 @@ public class BCryptPasswordEncoderConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return  http
+                .addFilterBefore(jwtAuthenticationTokenFilter, UsernamePasswordAuthenticationFilter.class)
                 // 基于 token，不需要 csrf
                 .csrf().disable()
                 // 开启跨域以便前端调用接口
@@ -60,8 +67,11 @@ public class BCryptPasswordEncoderConfig {
                 .cors().configurationSource(corsConfigurationSource())
                 .and()
                 .build();
+
+
     }
     /**
+     *
      * 配置跨源访问(CORS)
      * @return
      */
