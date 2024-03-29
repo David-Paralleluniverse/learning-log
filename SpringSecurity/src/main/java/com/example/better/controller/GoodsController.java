@@ -2,6 +2,7 @@ package com.example.better.controller;
 
 import com.example.better.BetterApplication;
 import com.example.better.entity.Goods;
+import com.example.better.entity.ResponseResult;
 import com.example.better.mapper.GoodsMapper;
 import com.example.better.service.SearchSevice;
 import com.example.better.utils.JwtUtil;
@@ -72,8 +73,12 @@ public class GoodsController {
 
 
 	@GetMapping("jwt")
-	public String Rtl(@RequestParam("token") String name){
-		return (String) JwtUtil.parsePayload(name).get("userid");
+	public ResponseResult<String> Rtl(@RequestParam("token") String name){
+		ResponseResult<String> res = new ResponseResult<>();
+		res.setCode(200);
+		res.setMsg("成功");
+		res.setData((String) JwtUtil.parsePayload(name).get("userid"));
+		return res;
 	}
 
 

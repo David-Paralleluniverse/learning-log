@@ -31,4 +31,5 @@ public interface GoodsMapper {
 
 	@Select("SELECT username FROM u_user WHERE  username=#{username}")
 	User SelUser1(String username);
+
 }

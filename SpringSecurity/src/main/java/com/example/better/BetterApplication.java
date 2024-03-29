@@ -26,10 +26,14 @@ public class BetterApplication {
 
 		*/
 		/*
-		System.out.println(JwtUtil.genAccessToken("Wongy"));
-		System.out.println(JwtUtil.parsePayload("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyaWQiOiJXb25neSIsImp0aSI6IjAyNTM0MGIwLTZhNzItNGQ2ZS1hYmRlLWRlNWY4MGEwOWJkNCIsImV4cCI6MTcxMTk3MDk4NywiaWF0IjoxNzExNjEwOTg3LCJzdWIiOiJQZXJpcGhlcmFscyIsImlzcyI6IlRpYW0ifQ.IVZL8V_gKIiFU5rRwAPLPDiyhULrsJt3S1i3ylMW0E8").get("userid"));
-		这里解决了Jwt的问题，生成了工具类并正常解析
+		//System.out.println(JwtUtil.genAccessToken("Wongy"));
+		System.out.println(JwtUtil.parsePayload("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyaWQiOiIxNiIsImp0aSI6IjFkOTAwZDQ3LWNjOGUtNDU0NS1hNjQzLWYyZTU2NjkzZTE0ZiIsImV4cCI6MTcxMjA0MzYwNiwiaWF0IjoxNzExNjgzNjA2LCJzdWIiOiJQZXJpcGhlcmFscyIsImlzcyI6IlRpYW0ifQ.iyXi3pi1Ui5SiPb72Hgo4es6iBeX5E9C8zPf1Sx5ZQ4").get("userid"));
+		//这里解决了Jwt的问题，生成了工具类并正常解析
+
 		 */
+
+
+
 
 
 	}
