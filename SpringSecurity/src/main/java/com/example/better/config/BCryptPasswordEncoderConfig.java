@@ -57,6 +57,7 @@ public class BCryptPasswordEncoderConfig {
                 .authorizeHttpRequests()
                 // 指定某些接口不需要通过验证即可访问。登录接口肯定是不需要认证的
                 .requestMatchers("/uet/login").permitAll()
+                .requestMatchers("/uet/reg").permitAll()
                 // 静态资源，可匿名访问
                 // 这里意思是其它所有接口需要认证才能访问
                 .anyRequest().authenticated()
@@ -66,7 +67,9 @@ public class BCryptPasswordEncoderConfig {
                 // cors security 解决方案
                 .cors().configurationSource(corsConfigurationSource())
                 .and()
+                .addFilterBefore(jwtAuthenticationTokenFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();
+
 
 
     }
