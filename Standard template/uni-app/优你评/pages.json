@@ -1,0 +1,57 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path" : "pages/discovery/discovery",
+			"style" : 
+			{
+				"navigationBarTitleText" : "发现"
+			}
+		},
+		{
+			"path" : "pages/mine/mine",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"borderStyle":"black",//边框颜色
+		"backgroundColor":"#F7F7F7",//背景颜色
+		"color":"#000000",//默认颜色
+		"selectedColor":"#07C160",//选中的颜色
+		"list":[
+			{
+				"iconPath":"static/message.png",
+				"selectedIconPath":"static/message-active.png",
+				"text":"主页",
+				"pagePath":"pages/index/index"
+			},
+			{
+				"iconPath":"static/discover.png",
+				"selectedIconPath":"static/discover-ative.png",
+				"text":"发现",
+				"pagePath":"pages/discovery/discovery"
+			},
+			{
+				"iconPath":"static/mine.png",
+				"selectedIconPath":"static/mine-active.png",
+				"text":"我的",
+				"pagePath":"pages/mine/mine"
+			}
+		]
+	},
+	"uniIdRouter": {}
+}
